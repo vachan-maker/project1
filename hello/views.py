@@ -10,3 +10,6 @@ def vachan(request):
 
 def david(request):
     return HttpResponse("David ivide unde")
+
+def greet(request,name):
+    return HttpResponse(f"Hello {name}")
