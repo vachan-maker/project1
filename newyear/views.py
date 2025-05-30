@@ -5,7 +5,7 @@ from django.http import HttpResponse
 now = datetime.now()
 
 # Create your views here.
-def index():
+def index(request):
     if(now.month == 1 and now.day == 1):
         return HttpResponse("Happy New Year")
     else:
