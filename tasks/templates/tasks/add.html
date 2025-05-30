@@ -1,7 +1,7 @@
 {% extends "tasks/layout.html" %}
 
 {% block body%}
-        <form>
+        <form action="{%url 'tasks:add'%}" method="post">
             <h1>Add A New Task</h1>
             <input type="text" name="task">
             <input type="submit">
